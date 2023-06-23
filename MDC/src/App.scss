@@ -14,7 +14,7 @@ $theme-colors: (
   @return map-get($theme-colors, $key);
 }
 
-@import './comps/components';
+@import './comps/Components';
 
 .app {
   text-align: center;
