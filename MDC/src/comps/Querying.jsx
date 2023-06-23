@@ -59,25 +59,8 @@ const Querying = () => {
   
 
   const typeResponse = (message) => {
-    const typingSpeed = 50; // Adjust typing speed
-    const chunkSize = 1;
-  
-    let currentIndex = 0;
-    let typedMessage = '';
-  
-    const typingInterval = setInterval(() => {
-      const endIndex = currentIndex + chunkSize;
-      const chunk = message.substring(currentIndex, endIndex);
-  
-      typedMessage += chunk;
-      currentIndex = endIndex;
-  
-      if (currentIndex >= message.length) {
-        clearInterval(typingInterval);
-        setResponseMessage(typedMessage); // Move setResponseMessage outside of the if block
-      }
-    }, typingSpeed);
-  };
+    setResponseMessage(message);
+  };;
 
   useEffect(() => {
     setResponseMessage(''); // Reset response message
