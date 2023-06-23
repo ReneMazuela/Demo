@@ -13,7 +13,6 @@ $theme-colors: (
 @function theme-color($key) {
   @return map-get($theme-colors, $key);
 }
-
 @import './comps/Components';
 
 .app {
