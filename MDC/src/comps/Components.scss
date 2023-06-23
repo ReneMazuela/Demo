@@ -1,0 +1,262 @@
+body {
+  margin: 0;
+  padding: 0;
+  font-family: Arial, sans-serif;
+  background-color: #ffffff;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh; /* Set minimum height of the body to 100% of the viewport height */
+}
+
+
+.query {
+  display: flex;
+  flex-direction: column;
+  width: 70%;
+  margin: 0 auto;
+  gap: 15px;
+  padding-top: 1px; /* Add padding between navbar and input */
+  margin-bottom: 20px; /* Add margin at the bottom */
+  margin-top: auto; /* Push the query component to the top */
+}
+
+
+.query__input {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  background-color: #f2f2f2;
+  border-radius: 30px;
+  padding: 5px 10px;
+}
+
+.query__input input {
+  flex: 1;
+  border: none;
+  background-color: transparent;
+  outline: none;
+  font-size: 14px;
+  color: #333333;
+}
+
+.query__input button {
+  margin-left: 10px;
+  border: none;
+  background-color: #0f3a68;
+  color: #ffffff;
+  font-size: 14px;
+  font-weight: bold;
+  padding: 8px 20px;
+  border-radius: 30px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.query__input button:hover {
+  background-color: #0056b3;
+}
+
+.query__loader {
+  align-self: center;
+  opacity: 0;
+  transition: opacity 300ms linear;
+}
+
+.query__loader--loading {
+  opacity: 1;
+}
+
+.query__results {
+  opacity: 1;
+  transition: opacity 300ms linear;
+  background-color: #f2f2f2;
+  border-radius: 30px;
+  font-size: 14px;
+  padding: 10px;
+  height: 20vh;
+  overflow-x: scroll;
+}
+
+.query__results--loading {
+  opacity: 0;
+}
+
+.query__sources {
+  opacity: 1;
+  transition: opacity 300ms linear;
+  background-color: #f2f2f2;
+  border-radius: 30px;
+  font-size: 14px;
+  padding: 10px;
+  height: 20vh;
+  overflow-x: scroll;
+  margin-bottom: 20px; /* Add margin at the bottom */
+}
+
+.query__sources--loading {
+  opacity: 0;
+}
+
+.query__sources__item {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  border-bottom: 1px solid #ccc;
+  margin: 0px;
+  padding: 10px 15px;
+  width: 100%;
+}
+
+.query__sources__item:first-child {
+  height: auto;
+  border-bottom: none;
+  text-align: left;
+  margin-bottom: 10px;
+  padding-bottom: 5px;
+}
+
+.query__sources__item__text {
+  display: flex;
+  flex-direction: column;
+  font-size: 12px;
+  margin-bottom: 3px;
+  margin-top: 0;
+}
+
+.query__sources__item__text span {
+  margin-bottom: 5px;
+}
+
+.query__sources__item:last-child {
+  border-bottom: none;
+}
+
+.query__sources__item__id {
+  font-size: 25px;
+  margin-bottom: 3px;
+  margin-top: 0;
+}
+
+.query__sources__item__text {
+  display: flex;
+  flex-direction: column;
+  font-size: 12px;
+  margin-bottom: 3px;
+  margin-top: 0;
+}
+
+.query__sources__item__footer {
+  font-size: 10px;
+  margin: 0;
+}
+
+.query__sources button {
+  /* Styles for the "Show Sources" button */
+  background-color: #007bff;
+  color: #ffffff;
+  padding: 8px 16px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.query__sources button:hover {
+  /* Styles for the button on hover */
+  background-color: #0056b3;
+}
+
+.query__sources button:focus {
+  /* Styles for the button when focused */
+  outline: none;
+  box-shadow: 0 0 0 2px rgba(0, 123, 255, 0.5);
+}
+/* Message Styles */
+.message {
+  display: flex;
+  align-items: center;
+  margin-bottom: 10px;
+  padding: 5px 10px;
+  border-radius: 20px;
+}
+
+.message {
+  display: flex;
+  align-items: center;
+  margin-bottom: 10px;
+  padding: 5px 10px;
+  border-radius: 20px;
+}
+
+.message.bot {
+  justify-content: flex-start;
+  background-color: #ffffff;
+  color: #333333;
+}
+
+/* Components.scss */
+
+.navbar-logo {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 10px; /* Add space below the logo */
+  margin-bottom: 5px; /* Adjust the margin-bottom value as needed */
+}
+
+.navbar-logo img {
+  max-width: 100%; /* Adjust the maximum width as needed */
+  height: auto;
+  max-height: 50px; /* Adjust the maximum height as needed */
+}
+
+
+
+.navbar-nav {
+  list-style: none;
+  display: flex;
+  align-items: center;
+}
+
+.nav-item {
+  margin-right: 15px;
+}
+
+.nav-item:last-child {
+  margin-right: 0;
+}
+
+.nav-item a {
+  text-decoration: none;
+  color: #ffffff;
+  font-size: 14px;
+  font-weight: bold;
+  transition: color 0.3s ease;
+}
+
+.nav-item a:hover {
+  color: #d2d2d2;
+}
+
+.footer {
+  background-color: #f5f5f5;
+  padding: 20px;
+  text-align: center;
+}
+.footer-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.footer-copyright {
+  color: #777;
+  font-size: 14px;
+  margin-bottom: 5px;
+}
+
+.footer-name {
+  color: #333;
+  font-size: 16px;
+}
+
