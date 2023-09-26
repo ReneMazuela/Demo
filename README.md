@@ -1,1 +1,22 @@
 # Demo
+
+### Installation
+
+1. **Clone the repository**:
+
+   ```bash
+   git clone https://github.com/triveradev/trudata.git
+   ```
+
+2. **CD into the Trudata directory**:
+
+   ```bash
+   cd Demo
+   ```
+
+
+3. **Build and run the Docker containers for bot FastAPI and React**:
+
+   ```bash
+   docker compose up --build -d
+   ```
