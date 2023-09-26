@@ -1,4 +1,5 @@
 import React, { useState, useEffect } from 'react';
+import performApiCall from '../api/api';
 import './Components.scss';
 
 const Querying = () => {
@@ -18,38 +19,22 @@ const Querying = () => {
       { text: inputText, isUser: true },
     ]);
     
-  
     try {
-      const res = await fetch('http://localhost:8000/querying/', {
-        method: 'POST',
-        headers: {
-          'Content-Type': 'application/json',
-        },
-        body: JSON.stringify({
-          input_text: inputText,
-        }),
-      });
-    
-      if (res.ok) {
-        const data = await res.json();
-        const { response, sources } = data.data;
+        const { text: responseData, sources: responseSources} = await performApiCall(inputText);
     
         setChatHistory((prevChatHistory) => [
           ...prevChatHistory,
-          { text: response, isUser: false },
+          { text: responseData, isUser: false },
         ]);
     
         setInputText('');
         setResponseMessage('');
         setErrorMessage('');
     
-        setSources(sources); // Set the sources separately
+        setSources(responseSources); // Set the sources separately
         
     
-        typeResponse(response);
-      } else {
-        throw new Error('Request failed');
-      }
+        typeResponse(responseData);
     } catch (error) {
       console.error(error);
       setErrorMessage('Error occurred while processing the request');

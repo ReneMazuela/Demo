@@ -8,8 +8,8 @@ const Footer = () => {
         <span className="footer-copyright">
           &copy; Rene mazuela
         </span>
-        <span className="footer-name">CIOL GPT</span>
-        <p>React Demo</p>
+        <span className="footer-name">CIOL GPT Demo</span>
+        <p>Demo v0.01</p>
       </div>
     </footer>
   );
