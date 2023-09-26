@@ -5,7 +5,7 @@
 1. **Clone the repository**:
 
    ```bash
-   git clone https://github.com/triveradev/trudata.git
+   git clone [https://github.com/triveradev/trudata.git](https://github.com/ReneMazuela/Demo.git)
    ```
 
 2. **CD into the Trudata directory**:
