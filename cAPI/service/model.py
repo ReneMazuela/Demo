@@ -45,7 +45,7 @@ class DataQuery:
         self.pine_api_key = os.getenv("PINE_API_KEY")
         self.open_api_key = os.getenv("OPEN_API_KEY")
         self.environment = os.getenv("PINE_ENV")
-        self.index_name = "pinecone-tutorial"
+        self.index_name = "mdc-dev"
         self.model_response = os.getenv("OPENAI_RESPONSE_MODEL")
         self.model_embed = os.getenv("OPENAI_EMBED_MODEL")
         self.text_field = "text"
@@ -64,7 +64,7 @@ class DataQuery:
 
         self.vectorstore = Pinecone(index, embed.embed_query, self.text_field)
 
-        self.llm = ChatOpenAI(
+        self.llm = OpenAI(
             temperature=0.5, model_name="gpt-3.5-turbo", max_tokens=512
         )
 
@@ -79,8 +79,10 @@ class DataQuery:
         print(f"Search Results: {search_results}")
 
         conversation_result = self.qa.run(input_text)
+        
         response = conversation_result
         print("Conversation Result:", response)
+
         sources = [result.metadata for result in search_results]
         print("sources:", sources)
 
@@ -93,10 +95,10 @@ class UserSchema(BaseModel):
     password: str = Field(...)
 
 
-
 class Login(BaseModel):
     email: EmailStr = Field(...)
     password: str = Field(...)
+
 
 class Rating(BaseModel):
     rating: int

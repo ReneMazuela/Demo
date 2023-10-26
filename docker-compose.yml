@@ -13,7 +13,7 @@ services:
   web:
     container_name: Front
     build:
-      context: ./MDC
+      context: ./MDC-Tailwind/Ciol
       dockerfile: Dockerfile
     ports:
       - 8080:8080

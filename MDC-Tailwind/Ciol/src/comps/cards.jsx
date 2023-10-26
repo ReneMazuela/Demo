@@ -25,8 +25,6 @@ import {
 
 const cards = [
     { name: 'INSTRUCTOR RESOURCES', href: '#', icon: DocumentChartBarIcon},
-    { name: 'PLACEHOLDER', href: '#', icon: DocumentChartBarIcon},
-    { name: 'PLACEHOLDER', href: '#', icon: DocumentChartBarIcon},
 ]
 
 function classNames(...classes) {
