@@ -1,4 +1,4 @@
-# Demo
+# MDC CIOL GPT v0.0.1
 
 ### Installation
 
@@ -20,3 +20,4 @@
    ```bash
    docker compose up --build -d
    ```
+![Architecture](ArchitechtureLayout.png)
