@@ -26,20 +26,20 @@ The MDC CIOL Training Assistant (CTA) is a state-of-the-art chatbot application 
 
 This documentation aims to assist with configuring and deploying the CTA. Some Key Features of the application include:
 
-###Automated FAQ Management:
+### Automated FAQ Management:
 
 The CTA autonomously handles routine inquiries, effectively reducing the administrative overhead and allowing faculty to focus on more critical engagements.
 A dynamically evolving Knowledge Base ensures the most current information is always accessible.
 
-###Distraction Avoidance:
+### Distraction Avoidance:
 
 The CTA remains focused on the topic, avoiding deviations into unrelated topics. CTA filters out irrelevant information or distractions during classroom sessions, ensuring discussions remain on-topic and productive.
 
-###Real-Time Communication:
+### Real-Time Communication:
 
 real-time interactions between students, faculty, and the CTA. Provides a centralized place for course discussions, queries, and collaborations.
 
-###Scalable Architecture:
+### Scalable Architecture:
 
 Designed with a modular and scalable architecture, The CTA can evolve alongside the expanding needs of the MDC CIOL program.
 This ensures seamless integration, laying a foundation for future advancements.
