@@ -69,7 +69,7 @@ These are essential to get started with the project. Follow the installation gui
    ```bash
    docker compose up --build -d
    ```
-## Usage
+## Local usage
 
 Once running, you can access the FastAPI documentation and test page by navigating to:
 
