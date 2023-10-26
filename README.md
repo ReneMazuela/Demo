@@ -48,3 +48,24 @@ Before you begin, ensure you have met the following requirements:
 - [npm](https://www.npmjs.com) or [Yarn](https://yarnpkg.com) 
 
 These are essential to get started with the project. Follow the installation guides linked above to set up the necessary tools and frameworks.
+
+### Installation (Local Machine)
+
+1. **Clone the repository**:
+
+   ```bash
+   git clone [[https://github.com/triveradev/trudata.git](https://github.com/ReneMazuela/MDC-CIOL)]
+   ```
+
+2. **CD into the Demo directory**:
+
+   ```bash
+   cd Demo
+   ```
+
+
+3. **Build and run the Docker containers for bot FastAPI and React**:
+
+   ```bash
+   docker compose up --build -d
+   ```
