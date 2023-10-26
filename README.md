@@ -67,4 +67,4 @@ Before you begin, ensure you have met the following requirements:
 - [Node.js](https://nodejs.org) (version 9.5.1)
 - [npm](https://www.npmjs.com) or [Yarn](https://yarnpkg.com) 
 
-These prerequisites are essential to get started with the project. Follow the installation guides linked above to set up the necessary tools and frameworks.
+These are essential to get started with the project. Follow the installation guides linked above to set up the necessary tools and frameworks.
