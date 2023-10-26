@@ -69,3 +69,18 @@ These are essential to get started with the project. Follow the installation gui
    ```bash
    docker compose up --build -d
    ```
+## Usage
+
+Once running, you can access the FastAPI documentation and test page by navigating to:
+
+```
+http://localhost:8000/docs
+```
+
+Explore and test the API through this interface or you can access the API directly through HTTP clients like [Postman](https://www.postman.com/) or `curl` commands.
+
+To access thefront-end on your machine once you have docker composed your containers you can do so using the link below.
+
+```
+➜  Local:   http://localhost:8080/
+```
