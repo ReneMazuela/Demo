@@ -20,3 +20,4 @@
    ```bash
    docker compose up --build -d
    ```
+![Architecture](ArchitechtureLayout.png)
