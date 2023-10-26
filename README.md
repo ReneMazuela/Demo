@@ -54,7 +54,7 @@ These are essential to get started with the project. Follow the installation gui
 1. **Clone the repository**:
 
    ```bash
-   git clone [[https://github.com/triveradev/trudata.git](https://github.com/ReneMazuela/MDC-CIOL)]
+   git clone [https://github.com/ReneMazuela/MDC-CIOL]
    ```
 
 2. **CD into the Demo directory**:
