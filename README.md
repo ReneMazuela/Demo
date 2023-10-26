@@ -30,7 +30,7 @@ This ensures seamless integration, laying a foundation for future advancements.
 
 ## Getting Started
 
-These instructions will help you set up and run the project locally.
+These instructions will help you set up and run the project locally and Deploy on an Ubuntu instance.
 
 ### Requirements
 
