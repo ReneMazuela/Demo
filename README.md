@@ -1,25 +1,5 @@
 # MDC CIOL TA v0.0.1
 
-### Installation
-
-1. **Clone the repository**:
-
-   ```bash
-   git clone [https://github.com/triveradev/trudata.git](https://github.com/ReneMazuela/Demo.git)
-   ```
-
-2. **CD into the Trudata directory**:
-
-   ```bash
-   cd Demo
-   ```
-
-
-3. **Build and run the Docker containers for bot FastAPI and React**:
-
-   ```bash
-   docker compose up --build -d
-   ```
 ## About
 
 The MDC CIOL Training Assistant (CTA) is a state-of-the-art chatbot application designed to streamline the learning and administrative processes within the College's MDC CIOL Program. With a focus on utilizing advanced Artificial Intelligence (AI) and Natural Language Processing (NLP) technologies, the CTA is engineered to offer an intuitive, interactive, and enriching experience for both students and faculty members.
