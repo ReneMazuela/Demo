@@ -52,7 +52,7 @@ This ensures seamless integration, laying a foundation for future advancements.
 
 These instructions will help you set up and run the project locally.
 
-### Prerequisites
+### Requirements
 
 Before you begin, ensure you have met the following requirements:
 
