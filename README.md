@@ -84,3 +84,25 @@ To access thefront-end on your machine once you have docker composed your contai
 ```
 ➜  Local:   http://localhost:8080/
 ```
+### Deployment on cloud (Ubuntu)
+
+1. **Begin by installing Docker**:
+
+   - [Docker Install Ubuntu](https://docs.docker.com/engine/install/ubuntu/): You can follow the installation Instructions provided on the Docker documentation.
+
+   ```bash
+   git clone [https://github.com/ReneMazuela/MDC-CIOL]
+   ```
+
+3. **CD into the Demo directory**:
+
+   ```bash
+   cd Demo
+   ```
+
+
+4. **Build and run the Docker containers for bot FastAPI and React**:
+
+   ```bash
+   docker compose up --build -d
+   ```
