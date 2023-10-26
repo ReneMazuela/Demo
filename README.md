@@ -20,4 +20,8 @@
    ```bash
    docker compose up --build -d
    ```
+## About
+
+The ChatBot: a cutting-edge solution, providing users with the ability to ask questions within a strictly defined context, thereby ensuring more accurate, pertinent, and intelligent responses.
+
 ![Architecture](documents/Layout.png)
