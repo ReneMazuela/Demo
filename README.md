@@ -85,14 +85,31 @@ To access thefront-end on your machine once you have docker composed your contai
 ➜  Local:   http://localhost:8080/
 ```
 ### Deployment on cloud (Ubuntu)
+### Requirements
 
+Before you begin, ensure you have met the following requirements:
+
+**FastAPI Service:**
+- [Docker Install Ubuntu](https://docs.docker.com/engine/install/ubuntu/): Follow Instructions on documentation.
+- Install Nginx: 
+   ```bash
+   sudo apt update
+   sudo apt install nginx
+   sudo service nginx restart
+   ```.
+- [FastAPI](https://fastapi.tiangolo.com/): You can install it via `pip install fastapi`.
+- [Uvicorn](https://www.uvicorn.org/): You can install it via `pip install uvicorn`.
+
+**React Service:**
+
+- [Node.js](https://nodejs.org) (version 9.5.1)
+- [npm](https://www.npmjs.com) or [Yarn](https://yarnpkg.com) 
+
+These are essential to get started with the project. Follow the installation guides linked above to set up the necessary tools and frameworks.
 1. **Begin by installing Docker**:
 
    - [Docker Install Ubuntu](https://docs.docker.com/engine/install/ubuntu/): You can follow the installation Instructions provided on the Docker documentation.
 
-   ```bash
-   git clone [https://github.com/ReneMazuela/MDC-CIOL]
-   ```
 
 3. **CD into the Demo directory**:
 
