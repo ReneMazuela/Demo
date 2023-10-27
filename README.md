@@ -84,7 +84,7 @@ To access thefront-end on your machine once you have docker composed your contai
 ```
 ➜  Local:   http://localhost:8080/
 ```
-### Deployment on cloud (Ubuntu)
+### Deployment setup on cloud (Ubuntu)
 
 ### Requirements
 
