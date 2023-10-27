@@ -108,13 +108,15 @@ Before you begin, ensure you have met the following requirements:
   
   Update the Certificate file location in the nginx.conf:
    ```bash
-   sudo service nginx restart
-   ```
-  Restart the Nginx server:
-   ```bash
    ssl_certificate /etc/letsencrypt/test/example.org/certificate.pem
    ssl_certificate_key /etc/letsencrypt/test/example.org/serverkey.pem
    ```
+   Restart the Nginx server:
+   ```bash
+   sudo service nginx restart
+   ```
+   Once completed you are ready to deploy! Please see the next section for instructions.
+  
 **Deployment:**
 
 Once your have completed the Requirements follow the instructions to deploy:
