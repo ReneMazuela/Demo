@@ -104,22 +104,26 @@ Before you begin, ensure you have met the following requirements:
 - [Letsencrypt SSL Certificate](https://lakin-mohapatra.medium.com/generate-lets-encrypt-free-wildcard-certificate-on-ubuntu-18-dcf26f458e13):
    Follow the guide to configure Letsencrypt SSL or configure your own by       purchasing a certificate. *An SSL certificate is needed for Nginx.
 
-- Configure the nginx.conf file
+  **Configure the nginx.conf file:**
   
   Update the Certificate file location in the nginx.conf:
+   ```bash
+   sudo service nginx restart
+   ```
+  Restart the Nginx server:
    ```bash
    ssl_certificate /etc/letsencrypt/test/example.org/certificate.pem
    ssl_certificate_key /etc/letsencrypt/test/example.org/serverkey.pem
    ```
+**Deployment:**
 
+Once your have completed the Requirements follow the instructions to deploy:
 
-- [Node.js](https://nodejs.org) (version 9.5.1)
-- [npm](https://www.npmjs.com) or [Yarn](https://yarnpkg.com) 
+1. **Clone the repository**:
 
-These are essential to get started with the project. Follow the installation guides linked above to set up the necessary tools and frameworks.
-1. **Begin by installing Docker**:
-
-   - [Docker Install Ubuntu](https://docs.docker.com/engine/install/ubuntu/): You can follow the installation Instructions provided on the Docker documentation.
+   ```bash
+   git clone (https://github.com/ReneMazuela/MDC-CIOL)
+   ```
 
 
 3. **CD into the Demo directory**:
@@ -129,8 +133,9 @@ These are essential to get started with the project. Follow the installation gui
    ```
 
 
-4. **Build and run the Docker containers for bot FastAPI and React**:
+4. **Compose and build the Docker containers and logs**:
 
    ```bash
    docker compose up --build -d
+   docker compose logs -f
    ```
