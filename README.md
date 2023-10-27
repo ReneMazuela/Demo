@@ -1,4 +1,4 @@
-# MDC CIOL CTA v0.0.1
+# MDC CIOL Training Assistant (CTA) v0.0.1
 
 ## About
 
