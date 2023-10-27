@@ -85,22 +85,33 @@ To access thefront-end on your machine once you have docker composed your contai
 ➜  Local:   http://localhost:8080/
 ```
 ### Deployment on cloud (Ubuntu)
+
 ### Requirements
 
 Before you begin, ensure you have met the following requirements:
 
-**FastAPI Service:**
+**Docker Service:**
 - [Docker Install Ubuntu](https://docs.docker.com/engine/install/ubuntu/): Follow Instructions on documentation.
+
+**Nginx Setup:**
+
 - Install Nginx: 
    ```bash
    sudo apt update
    sudo apt install nginx
    sudo service nginx restart
-   ```.
-- [FastAPI](https://fastapi.tiangolo.com/): You can install it via `pip install fastapi`.
-- [Uvicorn](https://www.uvicorn.org/): You can install it via `pip install uvicorn`.
+   ```
+- [Letsencrypt SSL Certificate](https://lakin-mohapatra.medium.com/generate-lets-encrypt-free-wildcard-certificate-on-ubuntu-18-dcf26f458e13):
+   Follow the guide to configure Letsencrypt SSL or configure your own by       purchasing a certificate. *An SSL certificate is needed for Nginx.
 
-**React Service:**
+- Configure the nginx.conf file
+  
+  Update the Certificate file location in the nginx.conf:
+   ```bash
+   ssl_certificate /etc/letsencrypt/test/example.org/certificate.pem
+   ssl_certificate_key /etc/letsencrypt/test/example.org/serverkey.pem
+   ```
+
 
 - [Node.js](https://nodejs.org) (version 9.5.1)
 - [npm](https://www.npmjs.com) or [Yarn](https://yarnpkg.com) 
