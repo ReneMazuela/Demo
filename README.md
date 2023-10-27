@@ -117,7 +117,7 @@ Before you begin, ensure you have met the following requirements:
    ```
    Once completed you are ready to deploy! Please see the next section for instructions.
   
-**Deployment:**
+###Deployment:###
 
 Once your have completed the Requirements follow the instructions to deploy:
 
